@@ -2,6 +2,10 @@
 
 Observed 2026-09; verify live with `video_upscale_models_list`.
 
+## Default: Topaz (user rule, 2026-10-22)
+
+Every video upscale uses Topaz (`mode: "topaz"`). Topaz Labs' own API or app comes first when the user has it (see `video-stage3-film-operator` references/services/topaz.md); this suite's Topaz mode is the next route. Use `magnific` or `magnific_precision` only when the user names them.
+
 ## Modes
 
 | Mode | Character | Suits |

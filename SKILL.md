@@ -29,6 +29,8 @@ Preferred: a `generation-handoff` entry from `ai-video-production` with `suite: 
 
 Ask only for what is missing and cost-relevant. Never infer approval from the handoff.
 
+Audio default: a job is either silent or carries sound effects and voice only. Before submitting a video job with sound, check that the handoff's `Audio:` line and the prompt both exclude background music, score, and song; add the exclusion to the prompt when it is missing. Music is laid in finishing, not generated with the clip. If a result still contains music, report it and route the cut to `video-finishing-maker` for muting; do not regenerate without a new approval.
+
 ## 1. Access path
 
 - **Route**: Magnific MCP server tools only (`mcp__magnific__*` or the client's equivalent). No Chrome, no web-UI clicking, no scraping.
@@ -83,6 +85,7 @@ Detail: [references/moderation-and-retry.md](references/moderation-and-retry.md)
 
 ## 7. Post-processing
 
+- Upscale: Topaz only by default (`topaz`), per the user's rule of 2026-10-22; the other modes only when named.
 - Upscale modes: `magnific` (creative; organic texture), `magnific_precision` (safer for text, titles, faces that must not drift), `topaz` (faithful).
 - `magnificResolution` enum is `720p`, `1k`, `2k`, `4k` — **not** `1080p`.
 - Before any re-upscale, search existing upscales with `creations_search` — completed-but-undownloaded results are common.

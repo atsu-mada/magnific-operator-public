@@ -19,14 +19,14 @@ Numbers in this skill (rates, limits, gaps) were observed in 2026-09 — verify 
 ### Claude Code (plugin)
 
 ```
-/plugin marketplace add atsu-mada/magnific-operator
+/plugin marketplace add atsu-mada/magnific-operator-public
 /plugin install magnific-operator@atsu-mada-magnific-operator
 ```
 
 ### Claude Code (manual)
 
 ```bash
-git clone https://github.com/atsu-mada/magnific-operator.git ~/.claude/skills/magnific-operator
+git clone https://github.com/atsu-mada/magnific-operator-public.git ~/.claude/skills/magnific-operator
 ```
 
 Invoke with `/magnific-operator`.
@@ -34,7 +34,7 @@ Invoke with `/magnific-operator`.
 ### Codex
 
 ```bash
-git clone https://github.com/atsu-mada/magnific-operator.git ~/.codex/skills/magnific-operator
+git clone https://github.com/atsu-mada/magnific-operator-public.git ~/.codex/skills/magnific-operator
 ```
 
 Invoke with `$magnific-operator`.
@@ -48,9 +48,9 @@ Invoke with `$magnific-operator`.
 
 | Skill | Role |
 |---|---|
-| [ai-video-production](https://github.com/atsu-mada/ai-video-production) | Preproduction; its `generation-handoff` (with `suite: magnific-operator`) is this skill's input; hosts the suite-operator registry |
-| [previz-maker](https://github.com/atsu-mada/previz-maker) | Block previz passed as `@Video 1` — only after you approve it visually |
-| [seedance-studio](https://github.com/atsu-mada/seedance-studio) | Seedance prompt craft, filter vocabulary, retake protocol |
+| [ai-video-production](https://github.com/atsu-mada/ai-video-production-public) | Preproduction; its `generation-handoff` (with `suite: magnific-operator`) is this skill's input; hosts the suite-operator registry |
+| [previz-maker](https://github.com/atsu-mada/previz-maker-public) | Block previz passed as `@Video 1` — only after you approve it visually |
+| [seedance-studio](https://github.com/atsu-mada/seedance-studio-public) | Seedance prompt craft, filter vocabulary, retake protocol |
 
 Magnific-specific tool behaviour lives here; general Seedance knowledge lives in seedance-studio.
 
